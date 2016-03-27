@@ -11,7 +11,7 @@ public class MoveFileDemo {
 	public static void main(String[] args) {
 		
 		File fileOld = new File("file_old.txt");
-		File fileDestination = new File("folder1/file_destination.txt");
+		File fileDestination = new File("folder2/file_destination.txt");
 		
 		// write some text to the file_old.txt
 		try {
@@ -47,6 +47,10 @@ public class MoveFileDemo {
 			 * 1. read from old file.
 			 * 2. write to new destination file.
 			 * 3. delete the old file.
+			 */
+			
+			/*
+			 * Move file can also be implemented by using function renameTo
 			 */
 			BufferedReader bufferedReader = new BufferedReader(new FileReader(fileOld));
 			PrintWriter printWriter = new PrintWriter(new FileWriter(fileDestination, false));

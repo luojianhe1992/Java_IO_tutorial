@@ -1,0 +1,32 @@
+package test_1;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class RenameFileDemo {
+	public static void main(String[] args) {
+		File fileBeforeRename = new File("file_before_rename.txt");
+		File fileAfterRename = new File("file_after_rename.txt");
+		
+		// try to write some text to the file_before_name.txt at first.
+		try {
+			PrintWriter printWriter = new PrintWriter(new FileWriter(fileBeforeRename));
+			String line;
+			line = "This is the first line to be in the file.";
+			printWriter.println(line);
+			line = "This is 2nd line.";
+			printWriter.println(line);
+			line = "Wow, this is the 3rd line, cool.";
+			printWriter.println(line);
+			
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}

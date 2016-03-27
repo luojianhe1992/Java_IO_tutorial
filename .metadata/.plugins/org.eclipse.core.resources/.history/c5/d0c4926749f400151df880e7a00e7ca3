@@ -1,0 +1,13 @@
+package test_1;
+
+import java.io.File;
+
+public class RenameFileDemo {
+	public static void main(String[] args) {
+		File fileBeforeRename = new File("file_before_rename.txt");
+		
+		
+		
+		
+	}
+}

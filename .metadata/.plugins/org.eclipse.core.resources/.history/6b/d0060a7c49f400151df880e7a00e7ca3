@@ -1,0 +1,20 @@
+package test_1;
+
+import java.io.File;
+import java.io.IOException;
+
+public class RenameFileDemo {
+	public static void main(String[] args) {
+		File fileBeforeRename = new File("file_before_rename.txt");
+		File fileAfterRename = new File("file_after_rename.txt");
+		
+		try {
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}
