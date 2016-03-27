@@ -11,7 +11,6 @@ public class WriteToFile {
 		File file1 = new File("textfile.txt");
 		
 		String string1 = "I am going to write to text file.";
-
 		char[] charArray = "I am a char array and I also going to write to text file.".toCharArray();
 		
 		try {

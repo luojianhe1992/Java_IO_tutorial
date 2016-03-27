@@ -1,0 +1,70 @@
+package test_1;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
+public class CopyFileDemo {
+	public static void main(String[] args) {
+		File originalFile = new File("file_original.txt");
+		File copyFile = new File("file_copy.txt");
+		
+		PrintWriter printWriter = null;
+		BufferedReader bufferedReader = null;
+		
+		String line;
+		
+		try {
+			
+			if (originalFile.createNewFile()) {
+				System.out.println(originalFile.getAbsolutePath() + " successfully created.");
+				
+				printWriter = new PrintWriter(new FileWriter(originalFile));
+				line = "This is a test line, this will be in the original file.";
+				printWriter.println(line);
+				
+				line = "This is the second line, and will be shown in the original file, too.";
+				printWriter.println(line);
+				
+				printWriter = null;
+				
+				line = null;
+				
+				bufferedReader = new BufferedReader(new FileReader(originalFile));
+				
+				System.out.println("Followings are the contents from original file.");
+				while ((line = bufferedReader.readLine()) != null) {
+					System.out.println(line);
+				}
+
+				bufferedReader = null;
+				
+				System.out.println();
+				
+				
+				System.out.println("Is going to copy the content from original file.");
+				
+				bufferedReader = new BufferedReader(FileReader(originalFile))
+				
+				
+			}
+			else{
+				System.out.println(originalFile.getAbsolutePath() + " can not be created.");
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			
+		}
+		
+		
+		
+	}
+}

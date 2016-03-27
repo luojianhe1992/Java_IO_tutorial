@@ -1,0 +1,13 @@
+package test_1;
+
+import java.io.File;
+
+public class CopyFileDemo {
+	public static void main(String[] args) {
+		File originalFile = new File("file_original.txt");
+		
+		File copyFile = new File("")
+		
+		
+	}
+}

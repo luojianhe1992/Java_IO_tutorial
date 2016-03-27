@@ -1,0 +1,30 @@
+package test_1;
+
+import java.io.File;
+import java.io.IOException;
+
+public class DeleteFileDemo {
+	public static void main(String[] args) throws IOException {
+		
+		File file = new File("delete_file_test.txt");
+		
+		// create a new file.
+		if (file.createNewFile()) {
+			System.out.println(file.getAbsolutePath() + " successfully created.");
+		}
+		else{
+			System.err.println(file.getAbsolutePath() + " can not be created.");
+		}
+		
+		System.out.println("************************************************");
+		
+		// delete the new file.
+		if (file.delete()) {
+			System.out.println(file.getAbsolutePath() + " deleted successfully.");
+		}
+		else{
+			System.err.println(file.getAbsolutePath() + " can not be deleted.");
+		}
+		
+	}
+}

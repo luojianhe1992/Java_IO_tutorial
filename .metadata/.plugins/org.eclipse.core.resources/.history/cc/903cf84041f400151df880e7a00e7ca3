@@ -1,0 +1,23 @@
+package test_1;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class CreateDirectories {
+	public static void main(String[] args) {
+		
+		List<File> directories = new ArrayList<File>();
+		
+		directories.add(new File("file1.txt"));
+		directories.add(new File("file2.txt"));
+		directories.add(new File("file3.txt"));
+		directories.add(new File("file4.txt"));
+		directories.add(new File("file5.txt"));
+		directories.add(new File("file6.txt"));
+		
+		
+
+		
+	}
+}

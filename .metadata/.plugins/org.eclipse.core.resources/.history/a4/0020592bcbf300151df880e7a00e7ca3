@@ -1,0 +1,18 @@
+package test_1;
+
+import java.io.File;
+
+public class ReadFromFile {
+	public static void main(String[] args) {
+		
+		File file1 = new File("textfile.txt");
+		File file2 = new File("textfile2.txt");
+		
+		try {
+			
+		} catch (IOException e) {
+			// TODO: handle exception
+		}
+		
+	}
+}

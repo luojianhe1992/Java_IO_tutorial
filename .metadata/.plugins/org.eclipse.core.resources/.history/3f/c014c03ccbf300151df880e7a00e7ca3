@@ -1,0 +1,22 @@
+package test_1;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+
+public class ReadFromFile {
+	public static void main(String[] args) {
+		
+		File file1 = new File("textfile.txt");
+		File file2 = new File("textfile2.txt");
+		
+		BufferedReader bufferedReader = 
+		
+		try {
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}

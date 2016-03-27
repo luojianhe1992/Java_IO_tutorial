@@ -1,0 +1,34 @@
+package test_1;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class CopyFileDemo {
+	public static void main(String[] args) {
+		File originalFile = new File("file_original.txt");
+		File copyFile = new File("file_copy.txt");
+		
+		PrintWriter printWriter = null;
+		BufferedReader bufferedReader = null;
+		
+		String line;
+		
+		try {
+			
+			if (originalFile.createNewFile()) {
+				System.out.println(x);
+			}
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			
+		}
+		
+		
+		
+	}
+}
