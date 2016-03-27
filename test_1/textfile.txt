@@ -1,0 +1,2 @@
+I am going to write to text file.
+I am a char array and I also going to write to text file.

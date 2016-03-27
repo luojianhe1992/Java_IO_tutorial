@@ -1,0 +1,15 @@
+package test_1;
+
+import java.io.File;
+
+public class WriteToFile {
+	public static void main(String[] args) {
+		
+		File file1 = new File("textfile.txt");
+		
+		String string1 = "I am going to write to textfile.txt";
+
+		char[] charArray = "I am a char array and I also going to write to textfile.txt"
+		
+	}
+}

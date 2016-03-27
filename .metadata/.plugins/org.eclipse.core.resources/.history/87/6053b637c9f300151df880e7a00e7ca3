@@ -1,0 +1,12 @@
+package test_1;
+
+import java.io.File;
+
+public class WriteToFile {
+	public static void main(String[] args) {
+		
+		File file1 = new File("textfile.txt");
+		File file2 = new File(pathname)
+		
+	}
+}
