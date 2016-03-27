@@ -1,0 +1,28 @@
+package test_1;
+
+import java.io.File;
+
+public class CreateFileDemo {
+	public static void main(String[] args) {
+		
+		/* The parameter for creating a new File object 
+		 * can be absolute address and relative address
+		 */
+		File newFile = new File("textfile.txt");
+		
+		try {
+			
+			if (newFile.createNewFile()) {
+				System.out.println(newFile.getAbsolutePath() 
+						+ "successfully created.");
+			}
+			else{
+				System.out.println(newFile.getAbsolutePath()
+						+ "already exist.");
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}
